@@ -1,0 +1,789 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     27922,        781]
+NotebookOptionsPosition[     26368,        725]
+NotebookOutlinePosition[     26716,        740]
+CellTagsIndexPosition[     26673,        737]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Emplear", " ", "listas", " "}], "Title"]], "Input",
+ CellChangeTimes->{{3.7463176545013657`*^9, 3.746317663026491*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"persona", " ", "=", 
+  RowBox[{"List", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<Medrano\>\"", ",", "\"\<Diaz\>\"", ",", "\"\<Manuel\>\""}], 
+     "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Lopez\>\"", ",", "\"\<Malacon\>\"", ",", " ", "\"\<Jose\>\""}], 
+     "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Casta\[NTilde]os\>\"", ",", " ", "\"\<Noriega\>\"", ",", " ", 
+      "\"\<Claudia\>\""}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Pi\[NTilde]a\>\"", ",", " ", "\"\<Borrego\>\"", ",", " ", 
+      "\"\<Anel\>\""}], " ", "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Lopez\>\"", ",", " ", "\"\<Leon\>\"", ",", " ", "\"\<Leonel\>\""}], 
+     "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Mejia\>\"", ",", " ", "\"\<Salcido\>\"", ",", " ", 
+      "\"\<Maria\>\""}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Villegas\>\"", ",", " ", "\"\<Leyva\>\"", ",", " ", 
+      "\"\<Manuel\>\""}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Arellanes\>\"", ",", " ", "\"\<Zamora\>\"", ",", " ", 
+      "\"\<Dalia\>\""}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Padilla\>\"", ",", " ", "\"\<Valencia\>\"", ",", " ", 
+      "\"\<Jesus\>\""}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Penunuri\>\"", ",", " ", "\"\<Quintero\>\"", ",", " ", 
+      "\"\<Santiago\>\""}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Tejada\>\"", ",", " ", "\"\<Delgado\>\"", ",", " ", 
+      "\"\<Daniel\>\""}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Rubio\>\"", ",", " ", "\"\<Valenzuela\>\"", ",", " ", 
+      "\"\<Anahi\>\""}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Balderas\>\"", ",", " ", "\"\<Lugo\>\"", ",", " ", "\"\<Lalo\>\""}],
+      "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7463176811637306`*^9, 3.746318059385625*^9}, {
+  3.74631838352417*^9, 3.746318498653745*^9}, {3.74631887291914*^9, 
+  3.7463188899683247`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Medrano\"\>", ",", "\<\"Diaz\"\>", ",", "\<\"Manuel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Malacon\"\>", ",", "\<\"Jose\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Casta\[NTilde]os\"\>", ",", "\<\"Noriega\"\>", 
+     ",", "\<\"Claudia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Pi\[NTilde]a\"\>", ",", "\<\"Borrego\"\>", 
+     ",", "\<\"Anel\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Leon\"\>", ",", "\<\"Leonel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Mejia\"\>", ",", "\<\"Salcido\"\>", ",", "\<\"Maria\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Villegas\"\>", ",", "\<\"Leyva\"\>", ",", "\<\"Manuel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Arellanes\"\>", ",", "\<\"Zamora\"\>", 
+     ",", "\<\"Dalia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Padilla\"\>", ",", "\<\"Valencia\"\>", 
+     ",", "\<\"Jesus\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Penunuri\"\>", ",", "\<\"Quintero\"\>", 
+     ",", "\<\"Santiago\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Tejada\"\>", ",", "\<\"Delgado\"\>", ",", "\<\"Daniel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Rubio\"\>", ",", "\<\"Valenzuela\"\>", 
+     ",", "\<\"Anahi\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Balderas\"\>", ",", "\<\"Lugo\"\>", ",", "\<\"Lalo\"\>"}], 
+    "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.74666399894433*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"personaAP", " ", "=", 
+  RowBox[{"Sort", "[", "persona", "]"}]}]], "Input",
+ CellChangeTimes->{{3.746318188626911*^9, 3.746318196109743*^9}, {
+  3.7463182459389267`*^9, 3.7463182484637575`*^9}, {3.746318312530225*^9, 
+  3.7463183603595285`*^9}, {3.7463185432367926`*^9, 3.7463185508614025`*^9}, {
+  3.746318630861226*^9, 3.7463186323239174`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Arellanes\"\>", ",", "\<\"Zamora\"\>", 
+     ",", "\<\"Dalia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Balderas\"\>", ",", "\<\"Lugo\"\>", ",", "\<\"Lalo\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Casta\[NTilde]os\"\>", ",", "\<\"Noriega\"\>", 
+     ",", "\<\"Claudia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Leon\"\>", ",", "\<\"Leonel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Malacon\"\>", ",", "\<\"Jose\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Medrano\"\>", ",", "\<\"Diaz\"\>", ",", "\<\"Manuel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Mejia\"\>", ",", "\<\"Salcido\"\>", ",", "\<\"Maria\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Padilla\"\>", ",", "\<\"Valencia\"\>", 
+     ",", "\<\"Jesus\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Penunuri\"\>", ",", "\<\"Quintero\"\>", 
+     ",", "\<\"Santiago\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Pi\[NTilde]a\"\>", ",", "\<\"Borrego\"\>", 
+     ",", "\<\"Anel\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Rubio\"\>", ",", "\<\"Valenzuela\"\>", 
+     ",", "\<\"Anahi\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Tejada\"\>", ",", "\<\"Delgado\"\>", ",", "\<\"Daniel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Villegas\"\>", ",", "\<\"Leyva\"\>", ",", "\<\"Manuel\"\>"}],
+     "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7463188960376472`*^9, 3.7466640025502253`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"personaAM", " ", "=", " ", 
+  RowBox[{"SortBy", "[", 
+   RowBox[{"persona", ",", 
+    RowBox[{
+     RowBox[{"#", "[", 
+      RowBox[{"[", "2", "]"}], "]"}], "&"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.746318652119975*^9, 3.7463186724080544`*^9}, {
+  3.7463187736376657`*^9, 3.7463187789116244`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Pi\[NTilde]a\"\>", ",", "\<\"Borrego\"\>", 
+     ",", "\<\"Anel\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Tejada\"\>", ",", "\<\"Delgado\"\>", ",", "\<\"Daniel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Medrano\"\>", ",", "\<\"Diaz\"\>", ",", "\<\"Manuel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Leon\"\>", ",", "\<\"Leonel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Villegas\"\>", ",", "\<\"Leyva\"\>", ",", "\<\"Manuel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Balderas\"\>", ",", "\<\"Lugo\"\>", ",", "\<\"Lalo\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Malacon\"\>", ",", "\<\"Jose\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Casta\[NTilde]os\"\>", ",", "\<\"Noriega\"\>", 
+     ",", "\<\"Claudia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Penunuri\"\>", ",", "\<\"Quintero\"\>", 
+     ",", "\<\"Santiago\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Mejia\"\>", ",", "\<\"Salcido\"\>", ",", "\<\"Maria\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Padilla\"\>", ",", "\<\"Valencia\"\>", 
+     ",", "\<\"Jesus\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Rubio\"\>", ",", "\<\"Valenzuela\"\>", 
+     ",", "\<\"Anahi\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Arellanes\"\>", ",", "\<\"Zamora\"\>", 
+     ",", "\<\"Dalia\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7463189000536814`*^9, 3.7466640041683226`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"personaN", " ", "=", " ", 
+  RowBox[{"SortBy", "[", 
+   RowBox[{"persona", ",", 
+    RowBox[{
+     RowBox[{"#", "[", 
+      RowBox[{"[", "3", "]"}], "]"}], "&"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7463187936576247`*^9, 3.7463188406366525`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Rubio\"\>", ",", "\<\"Valenzuela\"\>", 
+     ",", "\<\"Anahi\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Pi\[NTilde]a\"\>", ",", "\<\"Borrego\"\>", 
+     ",", "\<\"Anel\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Casta\[NTilde]os\"\>", ",", "\<\"Noriega\"\>", 
+     ",", "\<\"Claudia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Arellanes\"\>", ",", "\<\"Zamora\"\>", 
+     ",", "\<\"Dalia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Tejada\"\>", ",", "\<\"Delgado\"\>", ",", "\<\"Daniel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Padilla\"\>", ",", "\<\"Valencia\"\>", 
+     ",", "\<\"Jesus\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Malacon\"\>", ",", "\<\"Jose\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Balderas\"\>", ",", "\<\"Lugo\"\>", ",", "\<\"Lalo\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Leon\"\>", ",", "\<\"Leonel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Medrano\"\>", ",", "\<\"Diaz\"\>", ",", "\<\"Manuel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Villegas\"\>", ",", "\<\"Leyva\"\>", ",", "\<\"Manuel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Mejia\"\>", ",", "\<\"Salcido\"\>", ",", "\<\"Maria\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Penunuri\"\>", ",", "\<\"Quintero\"\>", 
+     ",", "\<\"Santiago\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.746318901625059*^9, 3.746664005351655*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"insertaOrdenado", "[", 
+   RowBox[{"elemento_", ",", "orden_", ",", "lista_"}], "]"}], ":=", 
+  RowBox[{"(", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"i", "=", "1"}], ",", 
+      RowBox[{"i", "<=", 
+       RowBox[{"Length", "[", "lista", "]"}]}], ",", 
+      RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"res", "=", 
+        RowBox[{"AlphabeticOrder", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"lista", "[", 
+            RowBox[{"[", "i", "]"}], "]"}], "[", 
+           RowBox[{"[", "orden", "]"}], "]"}], ",", 
+          RowBox[{"elemento", "[", 
+           RowBox[{"[", "orden", "]"}], "]"}], ",", 
+          RowBox[{"Language", "\[Rule]", "\"\<Spanish\>\""}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"res", "\[Equal]", 
+           RowBox[{"-", "1"}]}], " ", "||", " ", 
+          RowBox[{"res", "\[Equal]", "0"}]}], ",", "\[IndentingNewLine]", 
+         RowBox[{"listaN", "=", 
+          RowBox[{"Insert", "[", 
+           RowBox[{"lista", ",", "elemento", ",", "i"}], "]"}]}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Break", "[", "]"}], ";"}]}], "\[IndentingNewLine]", "]"}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"Return", "[", "listaN", "]"}]}], "\[IndentingNewLine]", 
+   ")"}]}]], "Input",
+ CellChangeTimes->{{3.746663338788187*^9, 3.7466633432367163`*^9}, {
+   3.7466634076813087`*^9, 3.7466634414463015`*^9}, {3.7466635499880953`*^9, 
+   3.746663603212531*^9}, {3.7466636506794906`*^9, 3.746663674612624*^9}, {
+   3.746663897077502*^9, 3.746664012843113*^9}, {3.7466641161278124`*^9, 
+   3.746664148847171*^9}, {3.746664216395274*^9, 3.746664226906265*^9}, {
+   3.7466646538364773`*^9, 3.7466646582709475`*^9}, {3.7466646958549557`*^9, 
+   3.7466647792345552`*^9}, {3.7466648507531195`*^9, 3.746664855905188*^9}, {
+   3.7466651967567434`*^9, 3.7466653536424837`*^9}, {3.746665422450427*^9, 
+   3.746665436995167*^9}, {3.7466654945275507`*^9, 3.746665512489813*^9}, {
+   3.7466655661616974`*^9, 3.746665659091338*^9}, {3.74666569147087*^9, 
+   3.746665711297465*^9}, {3.746665785205425*^9, 3.746665802117543*^9}, {
+   3.746666058490341*^9, 3.746666124632859*^9}, {3.7466661755237837`*^9, 
+   3.7466661944397497`*^9}, {3.7466663938149333`*^9, 
+   3.7466664387160187`*^9}, {3.746666473189333*^9, 3.746666474611521*^9}, {
+   3.746666509595889*^9, 3.746666539378595*^9}, {3.7466666196272907`*^9, 
+   3.746666645578726*^9}, 3.746667014035797*^9}],
+
+Cell[BoxData[
+ RowBox[{"insertaOrdenado", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<Reyes\>\"", ",", "\"\<Carrillo\>\"", ",", "\"\<Cristobal\>\""}], 
+    "}"}], ",", "1", ",", "personaAP"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7466640240999546`*^9, 3.7466640853670263`*^9}, 
+   3.7466642082899084`*^9, {3.7466663345055866`*^9, 3.7466663398625264`*^9}, {
+   3.7466665465809927`*^9, 3.7466665506956415`*^9}, {3.7466666012805147`*^9, 
+   3.746666605090327*^9}, {3.7466667014806943`*^9, 3.746666702735973*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"eliminaOrdenado", "[", 
+   RowBox[{"elemento_", ",", "orden_", ",", "lista_"}], "]"}], ":=", 
+  RowBox[{"(", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"i", "=", "1"}], ",", 
+      RowBox[{"i", "<=", 
+       RowBox[{"Length", "[", "lista", "]"}]}], ",", 
+      RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"res", "=", 
+        RowBox[{"AlphabeticOrder", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"lista", "[", 
+            RowBox[{"[", "i", "]"}], "]"}], "[", 
+           RowBox[{"[", "orden", "]"}], "]"}], ",", 
+          RowBox[{"elemento", "[", 
+           RowBox[{"[", "orden", "]"}], "]"}], ",", 
+          RowBox[{"Language", "\[Rule]", "\"\<Spanish\>\""}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"res", "\[Equal]", "0"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"listaN", "=", 
+          RowBox[{"Delete", "[", 
+           RowBox[{"lista", ",", "i"}], "]"}]}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Continue", "[", "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Break", "[", "]"}], ";"}]}], "\[IndentingNewLine]", "]"}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"Return", "[", "listaN", "]"}]}], "\[IndentingNewLine]", 
+   ")"}]}]], "Input",
+ CellChangeTimes->{{3.7466670265589647`*^9, 3.746667094658893*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"eliminaOrdenado", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\"\<Medrano\>\"", ",", "\"\<Diaz\>\"", ",", "\"\<Manuel\>\""}], 
+    "}"}], ",", "1", ",", "personaAP"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7466671186263504`*^9, 3.7466671301362762`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Arellanes\"\>", ",", "\<\"Zamora\"\>", 
+     ",", "\<\"Dalia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Balderas\"\>", ",", "\<\"Lugo\"\>", ",", "\<\"Lalo\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Casta\[NTilde]os\"\>", ",", "\<\"Noriega\"\>", 
+     ",", "\<\"Claudia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Leon\"\>", ",", "\<\"Leonel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Malacon\"\>", ",", "\<\"Jose\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Mejia\"\>", ",", "\<\"Salcido\"\>", ",", "\<\"Maria\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Padilla\"\>", ",", "\<\"Valencia\"\>", 
+     ",", "\<\"Jesus\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Penunuri\"\>", ",", "\<\"Quintero\"\>", 
+     ",", "\<\"Santiago\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Pi\[NTilde]a\"\>", ",", "\<\"Borrego\"\>", 
+     ",", "\<\"Anel\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Reyes\"\>", ",", "\<\"Carrillo\"\>", 
+     ",", "\<\"Cristobal\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Rubio\"\>", ",", "\<\"Valenzuela\"\>", 
+     ",", "\<\"Anahi\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Tejada\"\>", ",", "\<\"Delgado\"\>", ",", "\<\"Daniel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Villegas\"\>", ",", "\<\"Leyva\"\>", ",", "\<\"Manuel\"\>"}],
+     "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7466671310767293`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"insertar", "[", "elemento_", "]"}], ":=", 
+  RowBox[{"(", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"persona", "=", 
+     RowBox[{"Append", "[", 
+      RowBox[{"persona", ",", "elemento"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"personaAP", "=", 
+     RowBox[{"insertaOrdenado", "[", 
+      RowBox[{"elemento", ",", "1", ",", "personaAP"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"personaAM", "=", 
+     RowBox[{"insertaOrdenado", "[", 
+      RowBox[{"elemento", ",", "2", ",", "personaAM"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"personaN", "=", 
+     RowBox[{"insertaOrdenado", "[", 
+      RowBox[{"elemento", ",", "3", ",", "personaN"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", ")"}]}]], "Input",
+ CellChangeTimes->{{3.746666709526536*^9, 3.7466667304710464`*^9}, {
+  3.7466667611762133`*^9, 3.7466668661032534`*^9}, {3.746667203036765*^9, 
+  3.746667276330475*^9}}],
+
+Cell[BoxData[
+ RowBox[{"insertar", "[", 
+  RowBox[{"{", 
+   RowBox[{
+   "\"\<Reyes\>\"", ",", "\"\<Carrillo\>\"", ",", "\"\<Cristobal\>\""}], 
+   "}"}], "]"}]], "Input",
+ CellChangeTimes->{3.7466672557742295`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"eliminar", "[", "elemento_", "]"}], ":=", 
+  RowBox[{"(", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"persona", "=", 
+     RowBox[{"eliminaOrdenado", "[", 
+      RowBox[{"elemento", ",", "1", ",", "persona"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"personaAP", "=", 
+     RowBox[{"eliminaOrdenado", "[", 
+      RowBox[{"elemento", ",", "1", ",", "personaAP"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"personaAM", "=", 
+     RowBox[{"eliminaOrdenado", "[", 
+      RowBox[{"elemento", ",", "2", ",", "personaAM"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"personaN", "=", 
+     RowBox[{"eliminaOrdenado", "[", 
+      RowBox[{"elemento", ",", "3", ",", "personaN"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", ")"}]}]], "Input",
+ CellChangeTimes->{{3.7466669763625946`*^9, 3.746667000500973*^9}, 
+   3.7466671753384686`*^9, 3.7466672782104025`*^9}],
+
+Cell[BoxData[
+ RowBox[{"eliminar", "[", 
+  RowBox[{"{", 
+   RowBox[{
+   "\"\<Reyes\>\"", ",", "\"\<Carrillo\>\"", ",", "\"\<Cristobal\>\""}], 
+   "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7466668837634916`*^9, 3.74666688980319*^9}, 
+   3.7466671619502015`*^9, {3.7466672982559977`*^9, 3.7466673093566837`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["persona"], "Input",
+ CellChangeTimes->{{3.7466668941514735`*^9, 3.7466668951199274`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Medrano\"\>", ",", "\<\"Diaz\"\>", ",", "\<\"Manuel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Malacon\"\>", ",", "\<\"Jose\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Casta\[NTilde]os\"\>", ",", "\<\"Noriega\"\>", 
+     ",", "\<\"Claudia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Pi\[NTilde]a\"\>", ",", "\<\"Borrego\"\>", 
+     ",", "\<\"Anel\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Leon\"\>", ",", "\<\"Leonel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Mejia\"\>", ",", "\<\"Salcido\"\>", ",", "\<\"Maria\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Villegas\"\>", ",", "\<\"Leyva\"\>", ",", "\<\"Manuel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Arellanes\"\>", ",", "\<\"Zamora\"\>", 
+     ",", "\<\"Dalia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Padilla\"\>", ",", "\<\"Valencia\"\>", 
+     ",", "\<\"Jesus\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Penunuri\"\>", ",", "\<\"Quintero\"\>", 
+     ",", "\<\"Santiago\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Tejada\"\>", ",", "\<\"Delgado\"\>", ",", "\<\"Daniel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Rubio\"\>", ",", "\<\"Valenzuela\"\>", 
+     ",", "\<\"Anahi\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Balderas\"\>", ",", "\<\"Lugo\"\>", ",", "\<\"Lalo\"\>"}], 
+    "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.746666895615656*^9, 3.7466673245435348`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["personaAP"], "Input",
+ CellChangeTimes->{{3.746666901471323*^9, 3.746666903528142*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Arellanes\"\>", ",", "\<\"Zamora\"\>", 
+     ",", "\<\"Dalia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Balderas\"\>", ",", "\<\"Lugo\"\>", ",", "\<\"Lalo\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Casta\[NTilde]os\"\>", ",", "\<\"Noriega\"\>", 
+     ",", "\<\"Claudia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Leon\"\>", ",", "\<\"Leonel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Malacon\"\>", ",", "\<\"Jose\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Medrano\"\>", ",", "\<\"Diaz\"\>", ",", "\<\"Manuel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Mejia\"\>", ",", "\<\"Salcido\"\>", ",", "\<\"Maria\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Padilla\"\>", ",", "\<\"Valencia\"\>", 
+     ",", "\<\"Jesus\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Penunuri\"\>", ",", "\<\"Quintero\"\>", 
+     ",", "\<\"Santiago\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Pi\[NTilde]a\"\>", ",", "\<\"Borrego\"\>", 
+     ",", "\<\"Anel\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Rubio\"\>", ",", "\<\"Valenzuela\"\>", 
+     ",", "\<\"Anahi\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Tejada\"\>", ",", "\<\"Delgado\"\>", ",", "\<\"Daniel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Villegas\"\>", ",", "\<\"Leyva\"\>", ",", "\<\"Manuel\"\>"}],
+     "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.746666904000862*^9, 3.7466673269831405`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["personaAM"], "Input",
+ CellChangeTimes->{{3.746666907902159*^9, 3.746666909583192*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Pi\[NTilde]a\"\>", ",", "\<\"Borrego\"\>", 
+     ",", "\<\"Anel\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Tejada\"\>", ",", "\<\"Delgado\"\>", ",", "\<\"Daniel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Medrano\"\>", ",", "\<\"Diaz\"\>", ",", "\<\"Manuel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Leon\"\>", ",", "\<\"Leonel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Villegas\"\>", ",", "\<\"Leyva\"\>", ",", "\<\"Manuel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Balderas\"\>", ",", "\<\"Lugo\"\>", ",", "\<\"Lalo\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Malacon\"\>", ",", "\<\"Jose\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Casta\[NTilde]os\"\>", ",", "\<\"Noriega\"\>", 
+     ",", "\<\"Claudia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Penunuri\"\>", ",", "\<\"Quintero\"\>", 
+     ",", "\<\"Santiago\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Mejia\"\>", ",", "\<\"Salcido\"\>", ",", "\<\"Maria\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Padilla\"\>", ",", "\<\"Valencia\"\>", 
+     ",", "\<\"Jesus\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Rubio\"\>", ",", "\<\"Valenzuela\"\>", 
+     ",", "\<\"Anahi\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Arellanes\"\>", ",", "\<\"Zamora\"\>", 
+     ",", "\<\"Dalia\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7466669099289856`*^9, 3.746667329228866*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["personaN"], "Input",
+ CellChangeTimes->{{3.7466669155927515`*^9, 3.7466669177835054`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Rubio\"\>", ",", "\<\"Valenzuela\"\>", 
+     ",", "\<\"Anahi\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Pi\[NTilde]a\"\>", ",", "\<\"Borrego\"\>", 
+     ",", "\<\"Anel\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Casta\[NTilde]os\"\>", ",", "\<\"Noriega\"\>", 
+     ",", "\<\"Claudia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Arellanes\"\>", ",", "\<\"Zamora\"\>", 
+     ",", "\<\"Dalia\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Tejada\"\>", ",", "\<\"Delgado\"\>", ",", "\<\"Daniel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Padilla\"\>", ",", "\<\"Valencia\"\>", 
+     ",", "\<\"Jesus\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Malacon\"\>", ",", "\<\"Jose\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Balderas\"\>", ",", "\<\"Lugo\"\>", ",", "\<\"Lalo\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Lopez\"\>", ",", "\<\"Leon\"\>", ",", "\<\"Leonel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Medrano\"\>", ",", "\<\"Diaz\"\>", ",", "\<\"Manuel\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Villegas\"\>", ",", "\<\"Leyva\"\>", ",", "\<\"Manuel\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Mejia\"\>", ",", "\<\"Salcido\"\>", ",", "\<\"Maria\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Penunuri\"\>", ",", "\<\"Quintero\"\>", 
+     ",", "\<\"Santiago\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7466669181103086`*^9, 3.7466673314685855`*^9}]
+}, Open  ]]
+},
+WindowSize->{759, 601},
+WindowMargins->{{Automatic, 57}, {25, Automatic}},
+FrontEndVersion->"11.0 para Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 155, 3, 76, "Input"],
+Cell[CellGroupData[{
+Cell[738, 27, 1992, 57, 163, "Input"],
+Cell[2733, 86, 1591, 42, 107, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4361, 133, 370, 6, 47, "Input"],
+Cell[4734, 141, 1618, 42, 107, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6389, 188, 329, 8, 47, "Input"],
+Cell[6721, 198, 1618, 42, 107, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8376, 245, 277, 7, 47, "Input"],
+Cell[8656, 254, 1614, 42, 107, "Output"]
+}, Open  ]],
+Cell[10285, 299, 2678, 54, 328, "Input"],
+Cell[12966, 355, 523, 10, 30, "Input"],
+Cell[13492, 367, 1457, 35, 328, "Input"],
+Cell[CellGroupData[{
+Cell[14974, 406, 281, 6, 30, "Input"],
+Cell[15258, 414, 1600, 42, 107, "Output"]
+}, Open  ]],
+Cell[16873, 459, 987, 23, 163, "Input"],
+Cell[17863, 484, 213, 6, 30, "Input"],
+Cell[18079, 492, 933, 22, 126, "Input"],
+Cell[19015, 516, 314, 7, 30, "Input"],
+Cell[CellGroupData[{
+Cell[19354, 527, 103, 1, 30, "Input"],
+Cell[19460, 530, 1616, 42, 107, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21113, 577, 101, 1, 30, "Input"],
+Cell[21217, 580, 1616, 42, 107, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22870, 627, 101, 1, 30, "Input"],
+Cell[22974, 630, 1616, 42, 107, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24627, 677, 104, 1, 30, "Input"],
+Cell[24734, 680, 1618, 42, 107, "Output"]
+}, Open  ]]
+}
+]
+*)
+
